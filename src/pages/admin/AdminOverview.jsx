@@ -86,7 +86,7 @@ export default function AdminOverview() {
                 {recentAppointments.map((a) => (
                   <tr key={a._id}>
                     <td className="px-2 py-3 font-medium text-ink">{a.patient?.name}</td>
-                    <td className="px-2 py-3 text-ink/65">Dr. {a.doctor?.name}</td>
+                    <td className="px-2 py-3 text-ink/65">{a.doctor?.name}</td>
                     <td className="px-2 py-3 text-ink/55">{new Date(a.appointmentDate).toLocaleDateString()}</td>
                     <td className="px-2 py-3"><StatusBadge status={a.status} /></td>
                   </tr>
